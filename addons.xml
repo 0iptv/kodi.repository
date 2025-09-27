@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+
+<addon id="repository.repo-hub" version="1.0.3" name="Hub repository" provider-name="YourName">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Hub repository">
+        <dir>
+            <info compressed="false">https://raw.github.com/0iptv/kodi.repository/main/addons.xml</info>
+            <checksum>https://raw.github.com/0iptv/kodi.repository/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/0iptv/kodi.repository/raw/main/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Hub repository</summary>
+        <description lang="en">This is official hub repository
+        </description>
+        <disclaimer lang="en">The provider is not responsible for any issues caused by using this addon.
+        </disclaimer>
+        <email>your.email@example.com</email>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+<addon id="plugin.video.livetv"
+       name="CanliTV"
+       version="1.0.3"
+       provider-name="YourName">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.25.1"/>
+        <import addon="inputstream.adaptive" version="19.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Turkish Live TV Channels</summary>
+        <summary lang="tr_TR">Türk Canlı TV Kanalları</summary>
+        <description lang="en_GB">Watch Turkish live TV channels directly in Kodi. Provides access to various Turkish TV channels including news, entertainment, sports and more.</description>
+        <description lang="tr_TR">Kodi'de Türk canlı TV kanallarını izleyin. Haber, eğlence, spor ve daha fazla çeşitli Türk TV kanallarına erişim sağlar.</description>
+        <disclaimer lang="en_GB">This addon provides access to publicly available streams. Users are responsible for compliance with local laws.</disclaimer>
+        <disclaimer lang="tr_TR">Bu eklenti halka açık yayınlara erişim sağlar. Kullanıcılar yerel yasalara uygunluktan sorumludur.</disclaimer>
+        <language>tr</language>
+        <license>GPL-3.0-only</license>
+        <forum>https://github.com/yourusername/plugin.video.canlitv/discussions</forum>
+        <website>https://github.com/yourusername/plugin.video.canlitv</website>
+        <email>your.email@example.com</email>
+        <source>https://github.com/yourusername/plugin.video.canlitv</source>
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.png</fanart>
+        </assets>
+        <news>v1.0.0 (2025-01-21)
+- İlk sürüm
+- Canlı TV kanalları desteği
+- Kategori bazlı filtreleme
+- InputStreamAdaptive desteği</news>
+    </extension>
+</addon>
+<addon id="repository.repo-hub-linux" version="1.0.3" name="Hub repository for Linux" provider-name="YourName">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Hub repository Linux">
+        <dir>
+            <info compressed="false">https://raw.github.com/0iptv/kodi.repository/main/linux/addons.xml</info>
+            <checksum>https://raw.github.com/0iptv/kodi.repository/main/linux/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/0iptv/kodi.repository/raw/main/linux/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Hub repository Linux</summary>
+        <description lang="en">This is official hub repository
+        </description>
+        <disclaimer lang="en">The provider is not responsible for any issues caused by using this addon.
+        </disclaimer>
+        <email>your.email@example.com</email>
+        <platform>linux</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+<addon id="repository.repo-hub-webos" version="1.0.3" name="Hub repository webos" provider-name="YourName">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Hub repository webos">
+        <dir>
+            <info compressed="false">https://raw.github.com/0iptv/kodi.repository/main/webos/addons.xml</info>
+            <checksum>https://raw.github.com/0iptv/kodi.repository/main/webos/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/0iptv/kodi.repository/raw/main/webos/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Hub repository webos</summary>
+        <description lang="en">This is official hub repository
+        </description>
+        <disclaimer lang="en">The provider is not responsible for any issues caused by using this addon.
+        </disclaimer>
+        <email>your.email@example.com</email>
+        <platform>linux</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+<addon id="plugin.video.ultimate_video_addon" name="Ultimate Video Addon" version="1.0.4" provider-name="YourName">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.beautifulsoup4" version="4.12.2" />
+    <import addon="script.module.soupsieve" version="2.4.1"/>
+    <import addon="script.module.routing" version="0.2.3+matrix.1"/>
+    <import addon="script.module.typing_extensions" version="4.7.1"/>
+    <import addon="inputstream.adaptive" version="19.0.0"/>
+    <!-- Custom Modules -->
+    <import addon="script.module.tls_client" version="1.0.1"/>
+    <import addon="script.module.js2py" version="0.74"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Ultimate Video Addon</summary>
+    <description lang="en">The ultimate video addon for Kodi.</description>
+    <disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+    <license>GPL-2.0-only</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.png</fanart>      
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.js2py" name="js2py" version="0.74" provider-name="Addons4Kodi">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.six" version="1.16.0+matrix.1"/>
+    <import addon="script.module.pyjsparser" version="2.7.1"/>
+    <import addon="script.module.tzlocal" version="5.0.1"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python JavaScript Translator/Interpreter</summary>
+    <description>Packed for Kodi from https://github.com/PiotrDabkowski/Js2Py</description>
+    <platform>all</platform>
+    <language></language>
+    <license>MIT</license>
+    <forum></forum>
+    <website>https://github.com/PiotrDabkowski/Js2Py</website>
+    <source>https://github.com/PiotrDabkowski/Js2Py</source>
+    <email></email>
+  </extension>
+</addon>
+<addon id="script.module.pyjsparser"
+       name="pyjsparser"
+       version="2.7.1"
+       provider-name="jdollar">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python JavaScript Translator/Interpreter</summary>
+    <description>Packed for Kodi from https://github.com/PiotrDabkowski/pyjsparser</description>
+    <platform>all</platform>
+    <language></language>
+    <license>MIT</license>
+    <forum></forum>
+    <website>https://github.com/PiotrDabkowski/pyjsparser</website>
+    <source>https://github.com/PiotrDabkowski/pyjsparser</source>
+    <email>ionizedwarhead10 AT gmail.com</email>
+  </extension>
+</addon></addons>

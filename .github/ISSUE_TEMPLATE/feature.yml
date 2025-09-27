@@ -1,0 +1,25 @@
+name: Feature Request
+title: '[Feature]: '
+description: Suggest an idea for this project
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Feature Request
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the feature you would like to see.
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why is this feature needed?
+      description: Explain why this feature is important.
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Kodi version, platform, addon/module name and version, etc.
