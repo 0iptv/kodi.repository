@@ -182,4 +182,28 @@
     <source>https://github.com/PiotrDabkowski/pyjsparser</source>
     <email>ionizedwarhead10 AT gmail.com</email>
   </extension>
+</addon>
+<addon id="service.cleanservice" name="Clean Service" version="1.0.0" provider-name="Gemini">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="main.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">A clean service addon</summary>
+    <description lang="en_GB">A service to perform cleaning tasks in the background and manually.</description>
+    <disclaimer lang="en_GB"></disclaimer>
+    <platform>all</platform>
+    <license>MIT</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.png</fanart>
+    </assets>
+  </extension>
 </addon></addons>
