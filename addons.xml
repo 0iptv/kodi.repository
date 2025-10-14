@@ -110,7 +110,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="plugin.video.ultimate_video_addon" name="Ultimate Video Addon" version="1.0.9" provider-name="YourName">
+<addon id="plugin.video.ultimate_video_addon" name="Ultimate Video Addon" version="1.0.10" provider-name="YourName">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.beautifulsoup4" version="4.12.2" />
